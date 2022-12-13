@@ -1,0 +1,706 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+.container {
+    max-width: 1360px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+/* header code */
+.header {
+    max-width: 1360px;
+    height: auto;
+    padding: 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(227, 221, 221);
+    background-color: white;
+    margin-bottom: 150px;
+}
+
+.header-logo {
+    width: 180px;
+    height: 34px;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-list {
+    padding: 8px 12px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navbar-list-link {
+    color: #212529;
+}
+
+.media-menu {
+    font-size: 25px;
+    display: none;
+    cursor: pointer;
+    color: rgb(56, 53, 53);
+}
+
+/* hero code */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px;
+}
+
+.hero-conetnt {
+    width: 50%;
+    height: auto;
+}
+
+.hero-banner {
+    width: 50%;
+}
+
+.hero-banner-images {
+    width: 624px;
+    height: 434px;
+}
+
+.hero-content-title {
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 5rem;
+    margin-bottom: 8px;
+}
+
+.hero-content-text {
+    margin-bottom: 16px;
+    width: 400px;
+    line-height: 25px;
+}
+
+.hero-content-btn {
+    color: white;
+    padding: 10px 13px;
+    background-color: #212529;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+.hero-content-btn:hover {
+    background-color: #424649;
+    transition: .5s;
+}
+
+/* brend code */
+.brend {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 48px 0px;
+}
+
+.brend-images {
+    width: 200px;
+    height: 70px;
+}
+
+
+/* premium code */
+.premium {
+    margin-bottom: 150px;
+}
+
+.premium-title {
+    text-align: center;
+    margin: 3rem 0rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.gaming-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    text-align: center;
+    grid-area: gamingCard;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: visible;
+}
+
+.premium-images-gaming {
+    padding-top: 50px;
+    width: 576px;
+    height: auto;
+}
+
+.gaming-card:hover .gaming-hover-div {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.gaming-hover-div {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 24, 24);
+    position: absolute;
+    bottom: -100px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.gaming-hover-div-text {
+    color: white;
+    font-weight: 500;
+}
+
+.fa-star {
+    color: orange;
+}
+
+.dragon-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    grid-area: dragonCard;
+}
+
+.dragon-card:hover .dragon-hover-div {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.telvezor-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    grid-area: telvezonCard;
+}
+
+.telvezor-card:hover .telvezor-hover-div {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.colsa-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    grid-area: colsaCard;
+}
+
+.colsa-card:hover .colsa-hover-div {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.wd-card {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+    grid-area: wdCard;
+}
+
+.wd-card:hover .wd-hover-div {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.colsa-hover-div,
+.wd-hover-div,
+.telvezor-hover-div,
+.dragon-hover-div {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 24, 24);
+    position: absolute;
+    bottom: -50px;
+    left: 0px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+
+
+.premium-content {
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "gamingCard gamingCard dragonCard telvezonCard"
+        "gamingCard gamingCard colsaCard wdCard";
+}
+
+.premium-box {
+    width: 308px;
+    height: 250px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+
+.premium-images {
+    width: 268px;
+    height: 210px;
+}
+
+
+/* new product code */
+.newProduct {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-bottom: 150px;
+}
+
+.newProduct-title {
+    text-align: center;
+    margin: 3rem 0rem;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.newProduct-card {
+    width: 288px;
+    height: 468px;
+    padding: 0px 24px;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.newProduct-card-images {
+    width: 248px;
+    height: auto;
+}
+
+.product-hover-div1,
+.product-hover-div2,
+.product-hover-div3,
+.product-hover-div4,
+.product-hover-div5,
+.product-hover-div6,
+.product-hover-div7,
+.product-hover-div8,
+.product-hover-div9,
+.product-hover-div10,
+.product-hover-div11,
+.product-hover-div12,
+.product-hover-div13,
+.product-hover-div14,
+.product-hover-div15,
+.product-hover-div16,
+.product-hover-div17,
+.product-hover-div18,
+.product-hover-div19,
+.product-hover-div20 {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(27, 24, 24);
+    position: absolute;
+    bottom: -100px;
+    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    transition: .5s;
+}
+
+.newProduct-card:first-child:hover .product-hover-div1 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(2):hover .product-hover-div2 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(3):hover .product-hover-div3 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(4):hover .product-hover-div4 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(5):hover .product-hover-div5 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(6):hover .product-hover-div6 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(7):hover .product-hover-div7 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(8):hover .product-hover-div8 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(9):hover .product-hover-div9 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(10):hover .product-hover-div10 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(11):hover .product-hover-div11 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(12):hover .product-hover-div12 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(13):hover .product-hover-div13 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(14):hover .product-hover-div14 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(15):hover .product-hover-div15 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(16):hover .product-hover-div16 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(17):hover .product-hover-div17 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(18):hover .product-hover-div18 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(19):hover .product-hover-div19 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.newProduct-card:nth-child(20):hover .product-hover-div20 {
+    bottom: 0px;
+    transition: .5s;
+}
+
+.footer-top-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 48px 0px;
+}
+
+.footer-list {
+    padding: 5px 0px;
+}
+
+.footer-logo-text {
+    max-width: 330px;
+    margin: 3rem 0rem;
+    line-height: 25px;
+}
+
+.footer-icon-group {
+    max-width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-card-title {
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.footer-bottom-content {
+    width: 100%;
+    background-color: #212529;
+    padding: 8px 0px;
+}
+
+.footer-bottom-text-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-year {
+    color: white;
+}
+
+.bactetop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid transparent;
+    font-size: 16px;
+    border-radius: 7px;
+    cursor: pointer;
+    padding: 7px;
+}
+
+@media only screen and (max-width:1275px) {
+    .premium-content {
+        align-content: center;
+        justify-content: center;
+        grid-template-areas:
+            "gamingCard gamingCard"
+            "gamingCard gamingCard"
+            "dragonCard telvezonCard"
+            "colsaCard wdCard";
+        gap: 50px;
+    }
+
+    .newProduct {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+
+    #newProduct {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width:1240px) {
+    .hero-banner-images {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:1040px) {
+
+    .brend {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    .header {
+        margin-bottom: 50px;
+    }
+
+    .hero-banner-images {
+        width: 400px;
+        height: auto;
+    }
+
+    .hero-content-title {
+        font-size: 50px;
+    }
+
+    .hero-content-text {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .footer-top-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+    }
+}
+
+@media only screen and (max-width:840px) {
+
+    .brend {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .hero-banner {
+        display: none;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hero-conetnt {
+        width: 100%;
+    }
+
+    .hero-content-title {
+        font-size: 4rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .navbar-item {
+        display: none;
+    }
+
+    .media-menu {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .premium-content {
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+
+    .brend {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .premium-content {
+        grid-template-areas:
+            "gamingCard"
+            "dragonCard"
+            "telvezonCard"
+            "colsaCard"
+            "wdCard";
+    }
+
+    .gaming-card {
+        width: 280px;
+    }
+
+    .premium-images-gaming {
+        padding-bottom: 50px;
+        width: 250px;
+    }
+
+    .premium-box {
+        width: 280px;
+        height: auto;
+        padding: 15px;
+    }
+
+    .premium-images {
+        width: 250px;
+    }
+
+    .newProduct {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .footer-top-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-bottom-text-group {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-icon-group {
+        max-width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .hero-content-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-content-text {
+        width: 250px;
+    }
+
+    .brend {
+        gap: 20px;
+        padding: 30px 0px;
+    }
+
+    .premium-title {
+        font-size: 1.5rem;
+    }
+
+    .newProduct-title {
+        font-size: 1.5rem;
+        margin: 1rem 0rem;
+    }
+
+    .premium {
+        margin-bottom: 50px;
+    }
+}
